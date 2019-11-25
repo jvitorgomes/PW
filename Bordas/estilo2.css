@@ -1,0 +1,41 @@
+#masculino{
+    background-color: lightcyan;
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    border:inset;
+    border-color: blue;
+    border-width: 4px;
+    border-radius: 15px 15px;
+}
+#feminino{
+    background-color: pink;
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    border:outset;
+    border-color:red;
+    border-width: 4px;
+    border-radius: 15px 15px;
+}
+#colorido{
+    background-color:whitesmoke;
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    border:solid;
+    border-color:red;
+    border-width: 4px;
+    border-radius: 15px 15px;
+    border-top-color: red;
+    border-bottom-color: blue;
+    border-right-color: greenyellow;
+    border-left-color: orange;
+}
+#h2{
+ padding: 0px;
+ border: 0px;   
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function() {
+                $("#b1").click(function() {
+                    $("p").toggleClass("vermelho");
+                });
+            $("#b2").click(function() {
+                $("p").toggleClass("azul");
+                });
+            });
+        </script>
+        <style type="text/css">
+            .vermelho {
+                color: red;
+            }
+            .azul {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>remova a classe vermelho da css 'p' ao clicar no botão</h1>
+        <h2>Cabeçalho</h2>
+        <p class="vermelho">Isso é um paragrafo.</p>
+        <p class="vermelho">Isso é outro paragrafo.</p>
+        <button id="b1">Vermelho.</button><br>
+        <button id="b2">Azul.</button><br>
+    </body>
+</html>

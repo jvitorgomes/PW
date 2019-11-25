@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="../jquery/jquery-1.11.2.js" type="text/javascript">
+            $(document).ready(function (){
+                $(".miniaturas").click(function (){
+                    var caminho = $(this).attr("src");
+                    $("#principal").attr("src", caminho);
+                });                   
+            });
+            
+        </script>
+        <style type="text/css">
+        #grande{
+            width: 400px;
+            height: 300px;
+            background-color: violet;
+        }
+        .miniaturas{
+            float: left;
+            height: 60px;
+            width: 80px;
+            background-color: yellow;
+            margin: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div id="grande">
+                <img id="principal" src="img/amarelo.jpg" alt="" width="400" height="300"/>
+            </div>
+            <div id="pequenas">
+                <img class="miniaturas" src="img/amarelo.jpg" alt="" width="80"/>
+                <img class="miniaturas" src="img/azul.jpg" alt="" width="80"/>
+                <img class="miniaturas" src="img/verde.jpg" alt="" width="80"/>
+                <img class="miniaturas" src="img/vermelho.jpg" alt="" width="80"/>
+            </div>
+        </div>
+    </body>
+</html>

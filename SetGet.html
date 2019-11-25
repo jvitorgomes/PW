@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="../jquery/jquery-1.11.2.js" type="text/javascript">
+            $(document).ready(function () {
+                 $("#get").click(function () {
+                     var fonte = $("h1").css("fontsize", "50px");
+                     alert(fonte);//32px
+                 });
+                 $("#set").click(function () {
+                     $("h1").css("fontsize", "50px");
+                 });
+                 $("#set2").click(function () {
+                     $("h1").css({
+                         fontsize: "100px",
+                         color: "red"
+                     });
+                 });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Get e Set com css</h1>
+        <button id="get">Get Valor</button>
+        <button id="set">Set Valor</button>
+        <button id="set2">Set Valor</button>
+        <p id="get", id="set", id="set2"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio sed odit vitae harum beatae 
+                sapiente unde aspernatur iusto deleniti consectetur, error assumenda ratione dignissimos modi maxime, 
+                dolorem mollitia rem molestiae.</p>
+    </body>
+</html>
